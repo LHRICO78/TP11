@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="1013.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lml.snir.gestionpersonne.client.JavaFXGUI">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="8.0" onMousePressed="#onMousePressedTableView" prefHeight="414.0" prefWidth="700.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="choiceBoxType" layoutX="729.0" layoutY="79.0" onAction="#onChoiceBoxChange" prefWidth="150.0" />
+      <Button layoutX="729.0" layoutY="141.0" mnemonicParsing="false" onAction="#onButtonBadgeClic" prefHeight="24.0" prefWidth="83.0" text="Badge" />
+      <Button layoutX="729.0" layoutY="175.0" mnemonicParsing="false" onAction="#onButtonPersonneClic" prefHeight="24.0" prefWidth="83.0" text="Personne" />
+      <Button layoutX="729.0" layoutY="213.0" mnemonicParsing="false" onAction="#onButtonAttributionClic" text="Atribution" />
+      <Button layoutX="729.0" layoutY="30.0" mnemonicParsing="false" onAction="#onButtonAddClic" prefHeight="24.0" prefWidth="76.0" text="Add" />
+      <Button layoutX="817.0" layoutY="30.0" mnemonicParsing="false" onAction="#onButtonUpdateClic" text="Update" />
+      <Button layoutX="895.0" layoutY="30.0" mnemonicParsing="false" onAction="#onButtonRemoveClic" text="Remove" />
+   </children>
+</AnchorPane>
